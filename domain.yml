@@ -1,0 +1,78 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    triggers: utter_greet
+- goodbye:
+    triggers: utter_goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- inform
+- job_check
+- next_job:
+    triggers: action_next_job
+- locate_tech
+- thanks
+entities:
+- date
+- tech_name
+slots:
+  address:
+    type: unfeaturized
+  customer:
+    type: unfeaturized
+  date:
+    type: text
+  description:
+    type: unfeaturized
+  job_id:
+    type: unfeaturized
+  tech_name:
+    type: text
+templates:
+  utter_greet:
+  - text: Hey! I am simPRO assistant. How can I help?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_date:
+  - text: Sure. Could you specify the day please?
+  - text: Sure. What day are you interested in?
+  utter_ask_tech_name:
+  - text: Sure. Could you provide a technician's first and last name please?
+  - text: Sure. Can I have a technician's first and last name please?
+  utter_ask_if_need_more_help:
+  - text: Is there anything else I can help you with?
+  - text: Do you need any further assistance?
+  - text: Can I help you with anything else?
+  utter_default:
+  - text: Sorry I didn't quite catch that. Could you rephrase?
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_ask_date
+- utter_ask_tech_name
+- utter_ask_if_need_more_help
+- utter_default
+- action_job_check
+- action_next_job
+- action_locate_tech
+forms:
+- date_form
+- tech_form

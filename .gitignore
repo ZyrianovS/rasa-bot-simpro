@@ -1,0 +1,12 @@
+__init__.py
+__pycache__/
+credentials.yml
+endpoints.yml
+events.db
+events.db-shm
+events.db-wal
+models/
+rasa.db
+rasa.db-shm
+rasa.db-wal
+vv_bot-simpro/

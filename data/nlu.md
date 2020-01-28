@@ -5,6 +5,8 @@
 - good morning
 - good evening
 - hey there
+- Hey
+- Hello
 
 ## intent:goodbye
 - bye
@@ -32,28 +34,17 @@
 - don't like that
 - no way
 - not really
+- no thanks
+- no thank you
+- No thank you
 
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
-
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
+## intent:thanks
+- thank you
+- thanks
+- great thank you
+- excellent thank you
+- good thanks a lot
+- thanks a lot
 
 ## intent:bot_challenge
 - are you a bot?
@@ -62,48 +53,56 @@
 - am I talking to a human?
 
 ## intent:inform
-- [Simon Zyrianov](tech_name)
-- [Timothy Orr](tech_name)
-- [Eduard Puig](tech_name)
-- [Curtis Thompson](tech_name)
-- [Rob Ormond](tech_name)
-- [Sonja Neal](tech_name)
-- [Kate Dubitskaya](tech_name)
-- [Tiff Taylor](tech_name)
-- [Erin Deter](tech_name)
-- [today](date)
-- [tomorrow](date)
-- [1 January](date)
-- [the 2nd of February](date)
-- [01.05.2019](date)
-- [10/04/2019](date)
-- [06.04.2020](date)
-- [25/12/2020](date)
-- [Monday](date)
+- [Simon Zyrianov](PERSON)
+- [Timothy Orr](PERSON)
+- [Eduard Puig](PERSON)
+- [Curtis Thompson](PERSON)
+- [Rob Ormond](PERSON)
+- [Sonja Neal](PERSON)
+- [Kate Dubitskaya](PERSON)
+- [Tiff Taylor](PERSON)
+- [Erin Deter](PERSON)
+- [today](DATE)
+- [tomorrow](DATE)
+- [1 January](DATE)
+- [the 2nd of February](DATE)
+- [01.05.2019](DATE)
+- [10/04/2019](DATE)
+- [06.04.2020](DATE)
+- [25/12/2020](DATE)
+- [Monday](DATE)
+- [Barak Obama](PERSON)
+- [nelson mandela](PERSON)
 
 ## intent:job_check
-- what jobs have I got on for [today](date) 
-- show me my jobs for [tomorrow](date)
-- my jobs on [14 January](date)
-- my jobs on [the 1st of April](date)
-- what jobs do I have on [15.06.2019](date)
-- what are my jobs on [01/05/2020](date)
-- jobs for [today](date)
-- my jobs [tomorrow](date)
+- what jobs have I got on for [today](DATE)
+- show me my jobs for [tomorrow](DATE)
+- my jobs on [14 January](DATE)
+- my jobs on [the 1st of April](DATE)
+- what jobs do I have on [15.06.2019](DATE)
+- what are my jobs on [01/05/2020](DATE)
+- jobs for [today](DATE)
+- my jobs [tomorrow](DATE)
 
 ## intent:next_job
 - what is my next job
 - next job
 - give me the next job
 - show me my next job
+- My next job
 
 ## intent:locate_tech
-- which job is [Ed Puig](tech_name) on right now
-- locate [Simon Zyrianov](tech_name)
-- where is [Tiff Taylor](tech_name) now
-- what is [Rob Ormond](tech_name) currently doing
-- find where [Kate Dubitskaya](tech_name) is
-
-## intent:thanks
-- thank you
-- thanks
+- which job is [Ed Puig](PERSON) on right now
+- locate [Simon Zyrianov](PERSON)
+- where is [Tiff Taylor](PERSON) now
+- what is [Rob Ormond](PERSON) currently doing
+- find where [Kate Dubitskaya](PERSON) is
+- locate a technician please
+- i need to know where a tech is
+- i need to find a tech
+- i need to locate a tech
+- find a tech please
+- locate a tech please
+- locate another tech
+- locate a tech
+- locate where [nelson mandela](PERSON) is

@@ -1,6 +1,7 @@
 session_config:
   session_expiration_time: 60.0
   carry_over_slots_to_new_session: true
+
 intents:
 - greet:
     triggers: utter_greet
@@ -8,18 +9,18 @@ intents:
     triggers: utter_goodbye
 - affirm
 - deny
-- mood_great
-- mood_unhappy
+- thanks
 - bot_challenge
 - inform
 - job_check
 - next_job:
     triggers: action_next_job
 - locate_tech
-- thanks
+
 entities:
-- date
-- tech_name
+- DATE
+- PERSON
+
 slots:
   address:
     type: unfeaturized
@@ -31,39 +32,32 @@ slots:
     type: unfeaturized
   job_id:
     type: unfeaturized
+  requested_slot:
+    type: unfeaturized
   tech_name:
-    type: text
+    type: unfeaturized
+
 templates:
   utter_greet:
-  - text: Hey! I am simPRO assistant. How can I help?
-  utter_cheer_up:
-  - text: 'Here is something to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
+  - text: "Hey! I am simPRO assistant. How can I help?"
   utter_goodbye:
-  - text: Bye
+  - text: "Bye"
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: "I am a bot, powered by Rasa."
   utter_ask_date:
-  - text: Sure. Could you specify the day please?
-  - text: Sure. What day are you interested in?
+  - text: "Sure. Could you specify the day or days please?"
   utter_ask_tech_name:
-  - text: Sure. Could you provide a technician's first and last name please?
-  - text: Sure. Can I have a technician's first and last name please?
+  - text: "Sure. Could you provide a technician's name (or part of the name) please?"
+  - text: "Sure. Can I have a technician's name (or part of the name) please?"
   utter_ask_if_need_more_help:
-  - text: Is there anything else I can help you with?
-  - text: Do you need any further assistance?
-  - text: Can I help you with anything else?
+  - text: "Is there anything else I can help you with?"
+  - text: "Do you need any further assistance?"
+  - text: "Can I help you with anything else?"
   utter_default:
-  - text: Sorry I didn't quite catch that. Could you rephrase?
+  - text: "Sorry I didn't quite catch that. Could you rephrase?"
+
 actions:
 - utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
 - utter_goodbye
 - utter_iamabot
 - utter_ask_date
@@ -73,6 +67,9 @@ actions:
 - action_job_check
 - action_next_job
 - action_locate_tech
+- action_fetch_tech_name
+- action_fetch_date
+
 forms:
 - date_form
 - tech_form

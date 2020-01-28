@@ -1,4 +1,5 @@
 language: en
+
 pipeline:
 - name: SpacyNLP
 - name: SpacyTokenizer
@@ -6,10 +7,12 @@ pipeline:
   return_sequence: true
 - name: RegexFeaturizer
   return_sequence: true
+- name: SpacyEntityExtractor
 - name: CRFEntityExtractor
   return_sequence: true
 - name: EntitySynonymMapper
 - name: SklearnIntentClassifier
+
 policies:
 - name: FormPolicy
 - name: FallbackPolicy

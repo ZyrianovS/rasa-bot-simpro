@@ -10,3 +10,4 @@ rasa.db
 rasa.db-shm
 rasa.db-wal
 vv_bot-simpro/
+story_graph.dot

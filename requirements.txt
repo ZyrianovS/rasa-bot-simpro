@@ -95,7 +95,7 @@ opt-einsum==3.1.0
 packaging==19.2
 phonemizer==2.0.1
 pika==1.0.1
-Pillow==6.2.1
+Pillow>=6.2.2
 pkg-resources==0.0.0
 promise==2.2.1
 prompt-toolkit==2.0.10
